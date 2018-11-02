@@ -1,8 +1,9 @@
-package Model;
+package Model.bean;
 
 public class Journaliste {
     private int id;
-    private String login, password;
+    private String login;
+    private String password;
     private int credit;
 
     public int getId() {

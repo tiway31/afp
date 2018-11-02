@@ -1,13 +1,33 @@
-package Model;
+package Model.bean;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 public class Article {
 
     private int id;
-    private String titre, contenu;
-    private int date;
+    private String titre;
+    private String contenu;
+    private Long date;
     private List<String> tagList;
+    private int journaliste;
+    private String Login;
+
+    public String getLogin() {
+        return Login;
+    }
+
+    public void setLogin(String login) {
+        Login = login;
+    }
+
+    public int getJournaliste() {
+        return journaliste;
+    }
+
+    public void setJournaliste(int journaliste) {
+        this.journaliste = journaliste;
+    }
 
     public List<String> getTagList() {
         return tagList;
@@ -42,11 +62,11 @@ public class Article {
         this.contenu = contenu;
     }
 
-    public int getDate() {
+    public Long getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(Long date) {
         this.date = date;
     }
 }
